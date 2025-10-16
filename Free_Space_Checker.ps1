@@ -1,4 +1,4 @@
-# Ask the user for the name or location of the drive
+# Location of the Drive
 
 $freeSpace = [Math]::Round((Get-CimInstance -ClassName Win32_LogicalDisk | Where-Object DeviceID -eq 'C:').FreeSpace / 1GB)
 
